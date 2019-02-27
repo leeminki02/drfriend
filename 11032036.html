@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="10291645.css">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400" rel="stylesheet">
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+  <title>Dr.Friend</title>
+</head>
+<body>
+  <div class="header">
+    <div class="title">
+      Dr.Friend
+    </div>
+    <div class="menu">
+      <!-- <a class="menuitems" href="#">Status</a>
+      <a class="menuitems" href="#">Fitness</a>
+      <a class="menuitems" href="#">Q&A</a>
+      <a class="menuitems" href="#">Symptoms</a> -->
+      <button class="menuitems logout" onclick="logout(); console.log('logout')">Log out</button>
+    </div>
+  </div>
+  <div class="dashboard">
+    <div class="line1">
+      <div class="dash user">
+        <div class="usrprof">
+          <img id="usrimg" src="sample.jpg" alt="Profile"> <!-- call image from database-->
+          <div id="usrname">
+            김대륜
+          </div>
+        </div>
+        <div class="usrinfo">
+          <span class="titlecond">Conditions</span>
+          <div class="lighterfont" id="profileconditions">
+          </div>
+        </div>
+      </div>
+      <div class="dash">
+        <div class="status">
+          <div class="walkcontain contain">
+            <p class="stattitle">활동 점수</p>
+            <div class="walkbody">
+              <p id="walk"> - </p>
+              <p id="walkexp">points</p>
+              <p class="whichis">AND IT IS</p>
+              <p class="statecompare" id="previwalk">-.-- <span class="lighterfont">times of yesterday</span></p>
+              <p class="statecompare" id="walktarget">TARGET: ----- points</p>
+              <p class="statecompare" id="walktargetpercent"> </br> --% <span class="lighterfont">of target points</span></p>
+            </div>
+          </div>
+
+          <div class="BPMcontain contain">
+            <p class="stattitle">심박수</p>
+            <div class="bpmbody">
+              <p id="bpm"> - </p>
+              <p id="bpmexp">BPM</p>
+              <p class="whichis">WHICH IS</p>
+              <p class="lighterfont">(Normal rate is 60-100)</p>
+              <p class="statecompare" id="previbpm"> -  <span class='lighterfont'>times of</span> ----</p>
+              <p class="statecompare" id="bpmgetpercent"> </p>
+            </div>
+          </div>
+
+          <div class="bodyinfo contain">
+            <p class="stattitle titofbodyinfo">신체 정보</p>
+            <div class="bodystat">
+              <p id="bodyheight">Height: - cm</p>
+              <p id="bodyweight">Weight: - kg</p>
+              <p id="fat">BMI: - %</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="line2">
+      <div class="dash infoboxes" id="info1">
+        <div class="infotitle">Q&A</div>
+        <p class="info infosubtitle" id="Questi">Q:</p>
+        <p class="info specific" id="Answer">A:</p>
+      </div>
+      <div class="dash infoboxes" id="info2">
+        <div class="infotitle">유행질환정보</div>
+        <p class="info infosubtitle" id="prevalentname">유행질환명</p>
+        <p class="info specific" id="prevalentinfo">특징</p>
+      </div>
+      <div class="dash infoboxes" id="info3">
+        <div class="infotitle">증상 통계</div>
+        <div id="topsymptoms">
+          #1: --</br>
+          #2: --</br>
+          #3: --
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="toosmall">
+    <p>Oops!</p>
+    This screen is too small </br>
+    to access Dr.Friend...</br>
+    Try to Access on desktop</br>
+    Or access on Desktop Mode
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-auth.js"></script>
+  <script src="10291646.js" charset="utf-8"></script>
+
+</body>
+</html>
