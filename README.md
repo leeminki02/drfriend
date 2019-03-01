@@ -1,6 +1,6 @@
 # Dr.Friend :: 2018 대륜고등학교 소프트웨어 경진대회 출품작
 
-developed by [JoonHee Lee(@neo81389)](https://github.com/neo81389) and [Minki Lee](./)
+developed by [JoonHee Lee(@neo81389)](https://github.com/neo81389) and [Minki Lee](../)
 
 ## Summary
 Medical Information System that records patients' health data using sensors in phone and other methods. Gathered data can be used for early and fast diagnosis.<br>
