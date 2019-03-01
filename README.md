@@ -1,6 +1,6 @@
 # Dr.Friend :: 2018 대륜고등학교 소프트웨어 경진대회 출품작
 
-developed by [JoonHee Lee(@neo81389)](github.com/neo81389) and [Minki Lee](github.com/lee-minki)
+developed by [JoonHee Lee(@neo81389)](https://github.com/neo81389) and [Minki Lee](./)
 
 ## Summary
 Medical Information System that records patients' health data using sensors in phone and other methods. Gathered data can be used for early and fast diagnosis.<br>
@@ -9,7 +9,7 @@ Medical Information System that records patients' health data using sensors in p
 ## Platform
 - `#Firebase` 서버를 이용한 데이터 동기화, 기록 및 실시간 추적
 - Web (Using HTML, CSS and Javascript)
-- [Android](github.com/neo81389/Dr_Friend)
+- [Android](https://github.com/neo81389/Dr_Friend)
 
 ## Features
 - Read data from Firebase server.
