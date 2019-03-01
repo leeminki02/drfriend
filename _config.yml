@@ -1,1 +1,8 @@
 theme: jekyll-theme-minimal
+
+locale                   : "en-US"
+title                    : "Minki Lee"
+title_separator          : "-"
+name                     : "Lee Minki"
+description              : "Personal Profile and Blog for Research & Development results."
+url                      : "https://lee-minki.github.io"
