@@ -1,0 +1,18 @@
+---
+---
+
+@import "jekyll-theme-minimal";
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans|Nanum+Gothic');
+
+pre, code{
+    font-family: 'Fira Mono', monospace;
+}
+body{
+    font-family: 'Fira Sans', 'Nanum Gothic', sans-serif;
+}
+code.highlighter-rouge {
+    color: #008925;
+    background: beige;
+    padding: 1px 4px;
+    border-radius: 4px;
+}
